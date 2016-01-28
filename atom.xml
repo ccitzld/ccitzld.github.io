@@ -1,37 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Hexo]]></title>
+  <title><![CDATA[ZLD's Blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-01-28T04:33:29.768Z</updated>
+  <updated>2016-01-28T06:12:00.592Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name><![CDATA[John Doe]]></name>
+    <name><![CDATA[ccitzld]]></name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2016/01/28/hello-world/"/>
-    <id>http://yoursite.com/2016/01/28/hello-world/</id>
-    <published>2016-01-28T04:33:29.768Z</published>
-    <updated>2016-01-28T04:33:29.768Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="quick-start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="create-a-new-post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="run-server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="generate-static-files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <title><![CDATA[Hexo博客命令]]></title>
+    <link href="http://yoursite.com/2016/01/28/Hexo%E5%8D%9A%E5%AE%A2%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2016/01/28/Hexo博客命令/</id>
+    <published>2016-01-28T06:12:00.000Z</published>
+    <updated>2016-01-28T06:12:00.592Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Markdown语法]]></title>
+    <link href="http://yoursite.com/2016/01/28/Markdown%E8%AF%AD%E6%B3%95/"/>
+    <id>http://yoursite.com/2016/01/28/Markdown语法/</id>
+    <published>2016-01-28T06:11:40.000Z</published>
+    <updated>2016-01-28T07:00:57.221Z</updated>
+    <content type="html"><![CDATA[<h2 id="&#x6807;&#x9898;"><a href="#u6807_u9898" class="headerlink" title="&#x6807;&#x9898;"></a>&#x6807;&#x9898;</h2><p>&#x5728;&#x6587;&#x672C;&#x524D;&#x9762;&#x52A0;&#x4E0A; # &#x5373;&#x53EF;&#xFF0C;&#x540C;&#x7406;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x4E8C;&#x7EA7;&#x6807;&#x9898;&#x3001;&#x4E09;&#x7EA7;&#x6807;&#x9898;&#x3001;&#x56DB;&#x7EA7;&#x6807;&#x9898;&#x3001;&#x4E94;&#x7EA7;&#x6807;&#x9898;&#x548C;&#x516D;&#x7EA7;&#x6807;&#x9898;&#xFF0C;&#x603B;&#x5171;&#x516D;&#x7EA7;&#xFF0C;&#x53EA;&#x9700;&#x589E;&#x52A0; # &#x5373;&#x53EF;&#x3002;<br>&#x793A;&#x4F8B;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#  &#x4E00;&#x7EA7;&#x6807;&#x9898;
+## &#x4E8C;&#x7EA7;&#x6807;&#x9898;
+### &#x4E09;&#x7EA7;&#x6807;&#x9898;
+#### &#x56DB;&#x7EA7;&#x6807;&#x9898;
+##### &#x4E94;&#x7EA7;&#x6807;&#x9898;
+###### &#x516D;&#x7EA7;&#x6807;&#x9898;</span><br></pre></td></tr></table></figure></p>
+<h2 id="&#x5F3A;&#x8C03;"><a href="#u5F3A_u8C03" class="headerlink" title="&#x5F3A;&#x8C03;"></a>&#x5F3A;&#x8C03;</h2><p>&#x661F;&#x53F7;&#x6216;&#x4E0B;&#x5212;&#x7EBF;&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x5355;&#x4E2A;&#x662F;&#x659C;&#x4F53;&#x6548;&#x679C;&#xFF0C;&#x4E24;&#x4E2A;&#x662F;&#x53D8;&#x4E3A;&#x7C97;&#x4F53;&#xFF1B;&#x7B26;&#x53F7;&#x53EF;&#x4EE5;&#x8DE8;&#x884C;&#xFF0C;&#x53EF;&#x52A0;&#x7A7A;&#x683C;&#x3002;<br>&#x793A;&#x4F8B;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*&#x659C;&#x4F53;*
+**&#x52A0;&#x7C97;**
+_&#x659C;&#x4F53;_
+__&#x52A0;&#x7C97;__</span><br></pre></td></tr></table></figure></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.]]>
+    <![CDATA[<h2 id="&#x6807;&#x9898;"><a href="#u6807_u9898" class="headerlink" title="&#x6807;&#x9898;"></a>&#x6807;&#x9898;</h2><p>&#x5728;&#x6587;&#x]]>
     </summary>
     
   </entry>

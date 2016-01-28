@@ -32,7 +32,7 @@
     <link href="http://yoursite.com/2016/01/28/Markdown%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2016/01/28/Markdown语法/</id>
     <published>2016-01-28T06:11:40.000Z</published>
-    <updated>2016-01-28T07:00:57.221Z</updated>
+    <updated>2016-01-28T07:32:57.744Z</updated>
     <content type="html"><![CDATA[<h2 id="&#x6807;&#x9898;"><a href="#u6807_u9898" class="headerlink" title="&#x6807;&#x9898;"></a>&#x6807;&#x9898;</h2><p>&#x5728;&#x6587;&#x672C;&#x524D;&#x9762;&#x52A0;&#x4E0A; # &#x5373;&#x53EF;&#xFF0C;&#x540C;&#x7406;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x4E8C;&#x7EA7;&#x6807;&#x9898;&#x3001;&#x4E09;&#x7EA7;&#x6807;&#x9898;&#x3001;&#x56DB;&#x7EA7;&#x6807;&#x9898;&#x3001;&#x4E94;&#x7EA7;&#x6807;&#x9898;&#x548C;&#x516D;&#x7EA7;&#x6807;&#x9898;&#xFF0C;&#x603B;&#x5171;&#x516D;&#x7EA7;&#xFF0C;&#x53EA;&#x9700;&#x589E;&#x52A0; # &#x5373;&#x53EF;&#x3002;<br>&#x793A;&#x4F8B;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#  &#x4E00;&#x7EA7;&#x6807;&#x9898;
 ## &#x4E8C;&#x7EA7;&#x6807;&#x9898;
 ### &#x4E09;&#x7EA7;&#x6807;&#x9898;
@@ -43,6 +43,44 @@
 **&#x52A0;&#x7C97;**
 _&#x659C;&#x4F53;_
 __&#x52A0;&#x7C97;__</span><br></pre></td></tr></table></figure></p>
+<h2 id="&#x5F15;&#x7528;"><a href="#u5F15_u7528" class="headerlink" title="&#x5F15;&#x7528;"></a>&#x5F15;&#x7528;</h2><p>&#x884C;&#x9996;&#x4F7F;&#x7528; &gt; &#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x8868;&#x793A;&#x5F15;&#x7528;&#x6BB5;&#x843D;&#xFF0C;&#x5185;&#x90E8;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x591A;&#x4E2A;&#x5F15;&#x7528;&#x3002;<br>&#x793A;&#x4F8B;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5F15;&#x7528;
+&gt; &#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x6362;&#x884C;
+&gt; &gt; &#x5185;&#x90E8;&#x5D4C;&#x5957;</span><br></pre></td></tr></table></figure></p>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<blockquote>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5F15;&#x7528;<br>&#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x6362;&#x884C;</p>
+<blockquote>
+<p>&#x5185;&#x90E8;&#x5D4C;&#x5957;</p>
+</blockquote>
+</blockquote>
+<h2 id="&#x5217;&#x8868;"><a href="#u5217_u8868" class="headerlink" title="&#x5217;&#x8868;"></a>&#x5217;&#x8868;</h2><p>&#x65E0;&#x5E8F;&#x5217;&#x8868;&#x4F7F;&#x7528; * + &#x6216; - &#x540E;&#x9762;&#x52A0;&#x4E0A;&#x7A7A;&#x683C;&#x6765;&#x8868;&#x793A;&#x3002;<br>&#x793A;&#x4F8B;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">* item1
+* item2
+* item3
+
++ item1
++ item2
++ item3
+
+- item1
+- item2
+- item3</span><br></pre></td></tr></table></figure></p>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<ul>
+<li>item1</li>
+<li>item2</li>
+<li>item3</li>
+</ul>
+<p>&#x6709;&#x5E8F;&#x5217;&#x8868;&#x4F7F;&#x7528;&#x6570;&#x5B57;&#x52A0;&#x82F1;&#x6587;&#x53E5;&#x53F7;&#x52A0;&#x7A7A;&#x683C;&#x8868;&#x793A;&#x3002;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1. Item 1
+2. Item 2
+3. Item 3</span><br></pre></td></tr></table></figure></p>
+<p>&#x6548;&#x679C;&#xFF1A;</p>
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ol>
+<h2 id="&#x4EE3;&#x7801;&#x533A;&#x57DF;"><a href="#u4EE3_u7801_u533A_u57DF" class="headerlink" title="&#x4EE3;&#x7801;&#x533A;&#x57DF;"></a>&#x4EE3;&#x7801;&#x533A;&#x57DF;</h2><p>&#x884C;&#x5185;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x53CD;&#x659C;&#x6760; ` &#x8868;&#x793A;&#x3002;<br>&#x5927;&#x6BB5;&#x4EE3;&#x7801;&#x7528;&#x4E09;&#x4E2A;`&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;<br>&#x793A;&#x4F8B;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`&#x8FD9;&#x662F;&#x9AD8;&#x4EAE;&#x4EE3;&#x7801;&#x533A;&#x57DF;` &#x90E8;&#x5206;&#x9AD8;&#x4EAE;</span><br></pre></td></tr></table></figure></p>
+<p>&#x6548;&#x679C;&#xFF1A;<br><code>&#x8FD9;&#x662F;&#x9AD8;&#x4EAE;&#x4EE3;&#x7801;&#x533A;&#x57DF;</code>&#x90E8;&#x5206;&#x9AD8;&#x4EAE;</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="&#x6807;&#x9898;"><a href="#u6807_u9898" class="headerlink" title="&#x6807;&#x9898;"></a>&#x6807;&#x9898;</h2><p>&#x5728;&#x6587;&#x]]>

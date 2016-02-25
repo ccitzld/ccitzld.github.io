@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-25T03:28:07.298Z</updated>
+  <updated>2016-02-25T05:20:13.368Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2016/02/24/JS%E5%AD%A6%E4%B9%A0-%E4%BA%8C/"/>
     <id>http://yoursite.com/2016/02/24/JS学习-二/</id>
     <published>2016-02-24T08:56:35.000Z</published>
-    <updated>2016-02-25T03:28:07.298Z</updated>
+    <updated>2016-02-25T05:20:13.368Z</updated>
     <content type="html"><![CDATA[<p>JS&#x5165;&#x95E8;&#x57FA;&#x7840;<br><a id="more"></a></p>
 <h2 id="&#x4E00;javascript-&#x5BF9;&#x8C61;"><a href="#u4E00_u3001JavaScript__u5BF9_u8C61" class="headerlink" title="&#x4E00;&#x3001;JavaScript &#x5BF9;&#x8C61;"></a>&#x4E00;&#x3001;JavaScript &#x5BF9;&#x8C61;</h2><p>&#x5BF9;&#x8C61;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x4F46;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x503C;&#xFF08;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#xFF09;&#x3002;</p>
 <h3 id="&#x5BF9;&#x8C61;&#x5B9A;&#x4E49;"><a href="#u5BF9_u8C61_u5B9A_u4E49_3A" class="headerlink" title="&#x5BF9;&#x8C61;&#x5B9A;&#x4E49;:"></a>&#x5BF9;&#x8C61;&#x5B9A;&#x4E49;:</h3><pre><code>var car = {type:&quot;Fiat&quot;, model:500, color:&quot;white&quot;};
@@ -63,6 +63,8 @@ mycars[2]=&quot;BMW&quot;
     
     </summary>
     
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
   </entry>
   
   <entry>
@@ -70,7 +72,7 @@ mycars[2]=&quot;BMW&quot;
     <link href="http://yoursite.com/2016/02/24/JS%E5%AD%A6%E4%B9%A0-%E4%B8%80/"/>
     <id>http://yoursite.com/2016/02/24/JS学习-一/</id>
     <published>2016-02-24T08:11:51.000Z</published>
-    <updated>2016-02-25T03:28:50.785Z</updated>
+    <updated>2016-02-25T05:19:52.759Z</updated>
     <content type="html"><![CDATA[<p>JS&#x5165;&#x95E8;&#x57FA;&#x7840;<br><a id="more"></a></p>
 <h2 id="&#x4E00;js&#x4EE3;&#x7801;&#x7684;&#x4F4D;&#x7F6E;"><a href="#u4E00_u3001js_u4EE3_u7801_u7684_u4F4D_u7F6E" class="headerlink" title="&#x4E00;&#x3001;js&#x4EE3;&#x7801;&#x7684;&#x4F4D;&#x7F6E;"></a>&#x4E00;&#x3001;js&#x4EE3;&#x7801;&#x7684;&#x4F4D;&#x7F6E;</h2><p>html&#x4E2D;&#x7684;js&#x4EE3;&#x7801;&#x5FC5;&#x987B;&#x653E;&#x5728;script&#x6807;&#x7B7E;&#x91CC;&#x9762;&#x3002;</p>
 <p>js&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x653E;&#x5728;HTML&#x9875;&#x9762;&#x4E2D;head&#x548C;body&#x6807;&#x7B7E;&#x90E8;&#x5206;&#x4E2D;&#x3002;</p>
@@ -179,6 +181,8 @@ alert(myName);
     
     </summary>
     
+      <category term="JavaScript" scheme="http://yoursite.com/categories/JavaScript/"/>
+    
   </entry>
   
   <entry>
@@ -186,7 +190,7 @@ alert(myName);
     <link href="http://yoursite.com/2016/02/22/Hexo%E4%B8%AD%E7%9A%84Markdown%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2016/02/22/Hexo中的Markdown语法/</id>
     <published>2016-02-22T08:12:19.000Z</published>
-    <updated>2016-02-25T03:28:36.732Z</updated>
+    <updated>2016-02-25T05:21:01.440Z</updated>
     <content type="html"><![CDATA[<p>Hexo&#x4E2D;&#x7684;Markdown&#x8BED;&#x6CD5;<br><a id="more"></a><br>Markdown<br>hexo&#x662F;&#x4F7F;&#x7528;Markdown&#x7F16;&#x8F91;&#x6587;&#x7AE0;&#x7684;&#xFF0C;&#x6211;&#x5199;&#x7684;&#x8FD9;&#x4E9B;&#x6587;&#x7AE0;&#x4E5F;&#x90FD;&#x662F;&#x7528;&#x8FD9;&#x79CD;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#x5B8C;&#x6210;&#x7684;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x4ECE;Markdown&#x8BF4;&#x8D77;&#x3002;<br>&#x4EC0;&#x4E48;&#x662F;Markdown<br>Markdown&#x8BED;&#x6CD5;<br>&#x4F8B;&#x6587;<br>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;vim&#x5DE5;&#x5177;&#x76F4;&#x63A5;&#x7F16;&#x8F91;md&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x8BB0;&#x4E8B;&#x672C;&#x6253;&#x5F00;md&#x6587;&#x4EF6;&#x7F16;&#x8F91;&#x4F60;&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;Markdown&#x7684;&#x7F16;&#x8F91;&#x5668;&#x7F16;&#x5199;&#xFF0C;&#x6709;&#x5F88;&#x591A;&#x5728;&#x7EBF;&#x7684;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x4F55;&#x6709;&#x4E0D;&#x5C11;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x6211;&#x662F;Mac&#x7CFB;&#x7EDF;&#xFF0C;&#x7528;&#x7684;&#x4E00;&#x4E2A;&#x53EB;Mou&#x7684;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x8FD8;&#x6BD4;&#x8F83;&#x597D;&#x4F7F;&#x3002;Windows&#x7CFB;&#x7EDF;&#x4E0B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x627E;&#x4E00;&#x4E0B;&#xFF0C;&#x5E94;&#x8BE5;&#x4E5F;&#x4F1A;&#x6709;&#x5F88;&#x597D;&#x7528;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x3002;<br>&#x4EC0;&#x4E48;&#x662F;Markdown<br>Markdown &#x662F;&#x4E00;&#x79CD;&#x8F7B;&#x91CF;&#x7EA7;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;&#x521B;&#x59CB;&#x4EBA;&#x4E3A;&#x7EA6;&#x7FF0;&#xB7;&#x683C;&#x9C81;&#x4F2F;&#x548C;&#x4E9A;&#x4F26;&#xB7;&#x65AF;&#x6C83;&#x8328;&#x3002;&#x5B83;&#x5141;&#x8BB8;&#x4EBA;&#x4EEC;&#x201C;&#x4F7F;&#x7528;&#x6613;&#x8BFB;&#x6613;&#x5199;&#x7684;&#x7EAF;&#x6587;&#x672C;&#x683C;&#x5F0F;&#x7F16;&#x5199;&#x6587;&#x6863;&#xFF0C;&#x7136;&#x540E;&#x8F6C;&#x6362;&#x6210;&#x6709;&#x6548;&#x7684;XHTML&#x6587;&#x6863;&#x201D;&#x3002; &#x2014;&#x2014;&#x7EF4;&#x57FA;&#x767E;&#x79D1;<br>&#x5148;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#xFF0C;Markdown&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x5177;&#x4F53;&#x600E;&#x4E48;&#x7528;&#xFF0C;&#x6211;&#x76F8;&#x4FE1;&#x5927;&#x5BB6;&#x4E00;&#x770B;&#x4F8B;&#x6587;&#x5C31;&#x9A6C;&#x4E0A;&#x660E;&#x767D;&#x4E86;&#x3002;</p>
 <h2 id="markdown&#x8BED;&#x6CD5;"><a href="#Markdown_u8BED_u6CD5" class="headerlink" title="Markdown&#x8BED;&#x6CD5;"></a>Markdown&#x8BED;&#x6CD5;</h2><p><img src="/image/markdown.png" alt="Markdown&#x8BED;&#x6CD5;"></p>
 ]]></content>
@@ -195,6 +199,8 @@ alert(myName);
     
     </summary>
     
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
   </entry>
   
   <entry>
@@ -202,7 +208,7 @@ alert(myName);
     <link href="http://yoursite.com/2016/02/22/github%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/02/22/github常用操作命令/</id>
     <published>2016-02-22T08:04:29.000Z</published>
-    <updated>2016-02-25T03:29:10.451Z</updated>
+    <updated>2016-02-25T05:35:27.025Z</updated>
     <content type="html"><![CDATA[<p>github&#x57FA;&#x7840;&#x64CD;&#x4F5C;&#x547D;&#x4EE4;<br><a id="more"></a><br>&#x5047;&#x8BBE;repository&#x7684;&#x540D;&#x5B57;&#x53EB;hello-world&#xFF1A;</p>
 <h2 id="1&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;repository"><a href="#1-_u521B_u5EFA_u4E00_u4E2A_u65B0_u7684repository_uFF1A" class="headerlink" title="1.&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;repository&#xFF1A;"></a>1.&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;repository&#xFF1A;</h2><p>&#x5148;&#x5728;github&#x4E0A;&#x521B;&#x5EFA;&#x5E76;&#x5199;&#x597D;&#x76F8;&#x5173;&#x540D;&#x5B57;&#xFF0C;&#x63CF;&#x8FF0;&#x3002;</p>
 <h3 id="cd-~hello-world"><a href="#24cd__7E/hello-world" class="headerlink" title="$cd ~/hello-world"></a>$cd ~/hello-world</h3><p>//&#x5230;hello-world&#x76EE;&#x5F55;,&#x672C;&#x5730;&#x76EE;&#x5F55;&#x540D;&#x4E0E;repository&#x7684;&#x540D;&#x5B57;&#x4E0D;&#x4E00;&#x5B9A;&#x76F8;&#x540C;</p>
@@ -263,6 +269,8 @@ alert(myName);
     
     </summary>
     
+      <category term="github" scheme="http://yoursite.com/categories/github/"/>
+    
   </entry>
   
   <entry>
@@ -270,13 +278,15 @@ alert(myName);
     <link href="http://yoursite.com/2016/02/02/%E5%AE%89%E5%8D%93%E6%80%BB%E7%BB%932016-02-02/"/>
     <id>http://yoursite.com/2016/02/02/安卓总结2016-02-02/</id>
     <published>2016-02-02T01:20:53.000Z</published>
-    <updated>2016-02-25T03:29:01.201Z</updated>
+    <updated>2016-02-25T05:21:30.752Z</updated>
     <content type="html"><![CDATA[<p>&#x4E2A;&#x4EBA;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x9636;&#x6BB5;&#x7814;&#x7A76;&#x95EE;&#x9898;&#x7684;&#x63D0;&#x7EB2;<br><a id="more"></a></p>
 <h4 id="&#x5C5E;&#x6027;&#x52A8;&#x753B;property-animation"><a href="#u5C5E_u6027_u52A8_u753B_uFF08Property_Animation_uFF09" class="headerlink" title="&#x5C5E;&#x6027;&#x52A8;&#x753B;&#xFF08;Property Animation&#xFF09;"></a>&#x5C5E;&#x6027;&#x52A8;&#x753B;&#xFF08;Property Animation&#xFF09;</h4><h4 id="&#x5012;&#x8BA1;&#x65F6;&#x7C7B;-countdowntimer"><a href="#u5012_u8BA1_u65F6_u7C7B_CountDownTimer" class="headerlink" title="&#x5012;&#x8BA1;&#x65F6;&#x7C7B; CountDownTimer"></a>&#x5012;&#x8BA1;&#x65F6;&#x7C7B; CountDownTimer</h4><h4 id="invalidate&#x548C;postinvalidate"><a href="#invalidate_u548CpostInvalidate" class="headerlink" title="invalidate&#x548C;postInvalidate"></a>invalidate&#x548C;postInvalidate</h4><h4 id="&#x5168;&#x5C40;&#x5F02;&#x5E38;&#x5904;&#x7406;-uncaughtexceptionhandler"><a href="#u5168_u5C40_u5F02_u5E38_u5904_u7406_UncaughtExceptionHandler" class="headerlink" title="&#x5168;&#x5C40;&#x5F02;&#x5E38;&#x5904;&#x7406; UncaughtExceptionHandler"></a>&#x5168;&#x5C40;&#x5F02;&#x5E38;&#x5904;&#x7406; UncaughtExceptionHandler</h4><h4 id="java&#x7EBF;&#x7A0B;&#x6C60;-threadpoolexecutor"><a href="#Java_u7EBF_u7A0B_u6C60_ThreadPoolExecutor" class="headerlink" title="Java&#x7EBF;&#x7A0B;&#x6C60; ThreadPoolExecutor"></a>Java&#x7EBF;&#x7A0B;&#x6C60; ThreadPoolExecutor</h4><h4 id="&#x67B6;&#x6784;-mvp&#x6A21;&#x5F0F;"><a href="#u67B6_u6784_MVP_u6A21_u5F0F" class="headerlink" title="&#x67B6;&#x6784; MVP&#x6A21;&#x5F0F;"></a>&#x67B6;&#x6784; MVP&#x6A21;&#x5F0F;</h4><h4 id="&#x5B89;&#x5353;&#x9AD8;&#x65AF;&#x6A21;&#x7CCA;"><a href="#u5B89_u5353_u9AD8_u65AF_u6A21_u7CCA" class="headerlink" title="&#x5B89;&#x5353;&#x9AD8;&#x65AF;&#x6A21;&#x7CCA;"></a>&#x5B89;&#x5353;&#x9AD8;&#x65AF;&#x6A21;&#x7CCA;</h4><h4 id="&#x4EE3;&#x7801;&#x4F18;&#x5316;-lint&#x5DE5;&#x5177;"><a href="#u4EE3_u7801_u4F18_u5316_lint_u5DE5_u5177" class="headerlink" title="&#x4EE3;&#x7801;&#x4F18;&#x5316; lint&#x5DE5;&#x5177;"></a>&#x4EE3;&#x7801;&#x4F18;&#x5316; lint&#x5DE5;&#x5177;</h4><h4 id="&#x5B89;&#x5353;&#x5F00;&#x53D1;&#x8005;&#x9009;&#x9879;&#x4E2D;&#x7684;&#x5E03;&#x5C40;&#x5DE5;&#x5177;"><a href="#u5B89_u5353_u5F00_u53D1_u8005_u9009_u9879_u4E2D_u7684_u5E03_u5C40_u5DE5_u5177" class="headerlink" title="&#x5B89;&#x5353;&#x5F00;&#x53D1;&#x8005;&#x9009;&#x9879;&#x4E2D;&#x7684;&#x5E03;&#x5C40;&#x5DE5;&#x5177;"></a>&#x5B89;&#x5353;&#x5F00;&#x53D1;&#x8005;&#x9009;&#x9879;&#x4E2D;&#x7684;&#x5E03;&#x5C40;&#x5DE5;&#x5177;</h4><h4 id="activity&#x7684;&#x8FC7;&#x5EA6;&#x52A8;&#x753B;&#x65B9;&#x6CD5;-overridependingtransition"><a href="#Activity_u7684_u8FC7_u5EA6_u52A8_u753B_u65B9_u6CD5_overridePendingTransition_28_29" class="headerlink" title="Activity&#x7684;&#x8FC7;&#x5EA6;&#x52A8;&#x753B;&#x65B9;&#x6CD5; overridePendingTransition()"></a>Activity&#x7684;&#x8FC7;&#x5EA6;&#x52A8;&#x753B;&#x65B9;&#x6CD5; overridePendingTransition()</h4><h4 id="&#x5199;&#x57FA;&#x7C7B;activity&#x4FDD;&#x5B58;&#x6240;&#x4EE5;activity&#x7528;&#x6765;&#x9000;&#x51FA;"><a href="#u5199_u57FA_u7C7BActivity_u4FDD_u5B58_u6240_u4EE5Activity_u7528_u6765_u9000_u51FA" class="headerlink" title="&#x5199;&#x57FA;&#x7C7B;Activity&#x4FDD;&#x5B58;&#x6240;&#x4EE5;Activity&#x7528;&#x6765;&#x9000;&#x51FA;"></a>&#x5199;&#x57FA;&#x7C7B;Activity&#x4FDD;&#x5B58;&#x6240;&#x4EE5;Activity&#x7528;&#x6765;&#x9000;&#x51FA;</h4><h4 id="&#x5B89;&#x5353;&#x6293;&#x5305;"><a href="#u5B89_u5353_u6293_u5305" class="headerlink" title="&#x5B89;&#x5353;&#x6293;&#x5305;"></a>&#x5B89;&#x5353;&#x6293;&#x5305;</h4>]]></content>
     <summary type="html">
     <![CDATA[<p>个人一个工作阶段研究问题的提纲<br>]]>
     
     </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
     
   </entry>
   
@@ -285,15 +295,18 @@ alert(myName);
     <link href="http://yoursite.com/2016/01/28/Hexo%E5%8D%9A%E5%AE%A2%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/01/28/Hexo博客命令/</id>
     <published>2016-01-28T06:12:00.000Z</published>
-    <updated>2016-02-25T03:28:24.688Z</updated>
+    <updated>2016-02-25T05:36:43.281Z</updated>
     <content type="html"><![CDATA[<p>&#x5907;&#x5FD8;Hexo&#x535A;&#x5BA2;&#x547D;&#x4EE4;<br><a id="more"></a></p>
 <h3 id="&#x7B80;&#x5199;&#x5E38;&#x7528;&#x547D;&#x4EE4;"><a href="#u7B80_u5199_u5E38_u7528_u547D_u4EE4_uFF1A" class="headerlink" title="&#x7B80;&#x5199;&#x5E38;&#x7528;&#x547D;&#x4EE4;&#xFF1A;"></a>&#x7B80;&#x5199;&#x5E38;&#x7528;&#x547D;&#x4EE4;&#xFF1A;</h3><p>hexo n &#x201C;&#x6211;&#x7684;&#x535A;&#x5BA2;&#x201D; == hexo new &#x201C;&#x6211;&#x7684;&#x535A;&#x5BA2;&#x201D; #&#x65B0;&#x5EFA;&#x6587;&#x7AE0;<br>hexo p == hexo publish<br>hexo g == hexo generate#&#x751F;&#x6210;<br>hexo s == hexo server #&#x542F;&#x52A8;&#x670D;&#x52A1;&#x9884;&#x89C8;<br>hexo d == hexo deploy#&#x90E8;&#x7F72;</p>
 <p>&#x9ED8;&#x8BA4;&#x672C;&#x5730;&#x9884;&#x89C8;&#x5730;&#x5740;&#xFF1A;<br><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
+<p>&#x4E3B;&#x9898;&#x5730;&#x5740;&#xFF1A;<br><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>备忘Hexo博客命令<br>]]>
     
     </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
   </entry>
   
@@ -302,7 +315,7 @@ alert(myName);
     <link href="http://yoursite.com/2016/01/28/Markdown%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2016/01/28/Markdown语法/</id>
     <published>2016-01-28T06:11:40.000Z</published>
-    <updated>2016-02-25T03:28:55.728Z</updated>
+    <updated>2016-02-25T05:21:09.278Z</updated>
     <content type="html"><![CDATA[<p>Markdown&#x8BED;&#x6CD5;<br><a id="more"></a></p>
 <h2 id="&#x6807;&#x9898;"><a href="#u6807_u9898" class="headerlink" title="&#x6807;&#x9898;"></a>&#x6807;&#x9898;</h2><p>&#x5728;&#x6587;&#x672C;&#x524D;&#x9762;&#x52A0;&#x4E0A; # &#x5373;&#x53EF;&#xFF0C;&#x540C;&#x7406;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x4E8C;&#x7EA7;&#x6807;&#x9898;&#x3001;&#x4E09;&#x7EA7;&#x6807;&#x9898;&#x3001;&#x56DB;&#x7EA7;&#x6807;&#x9898;&#x3001;&#x4E94;&#x7EA7;&#x6807;&#x9898;&#x548C;&#x516D;&#x7EA7;&#x6807;&#x9898;&#xFF0C;&#x603B;&#x5171;&#x516D;&#x7EA7;&#xFF0C;&#x53EA;&#x9700;&#x589E;&#x52A0; # &#x5373;&#x53EF;&#x3002;<br>&#x793A;&#x4F8B;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#  &#x4E00;&#x7EA7;&#x6807;&#x9898;
 ## &#x4E8C;&#x7EA7;&#x6807;&#x9898;
@@ -357,6 +370,8 @@ __&#x52A0;&#x7C97;__</span><br></pre></td></tr></table></figure></p>
     <![CDATA[<p>Markdown语法<br>]]>
     
     </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
   </entry>
   

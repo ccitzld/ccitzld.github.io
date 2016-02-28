@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/02/28/CardView%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2016-02-28T09:26:45.175Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/02/25/Android%E6%8E%A7%E4%BB%B6%E6%9E%B6%E6%9E%84/</loc>
-    <lastmod>2016-02-25T13:41:43.298Z</lastmod>
+    <lastmod>2016-02-26T02:44:32.871Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/02/22/github%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2016-02-26T01:34:22.753Z</lastmod>
   </url>
   
   <url>
@@ -19,11 +29,6 @@
   <url>
     <loc>http://yoursite.com/2016/01/28/Hexo%E5%8D%9A%E5%AE%A2%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2016-02-25T05:36:43.281Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/02/22/github%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2016-02-25T05:35:27.025Z</lastmod>
   </url>
   
   <url>

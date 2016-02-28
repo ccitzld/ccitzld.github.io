@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/02/28/RecyclerView%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2016-02-28T09:54:59.849Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/02/28/CardView%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2016-02-28T09:26:45.175Z</lastmod>
   </url>

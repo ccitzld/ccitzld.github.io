@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-28T09:26:45.175Z</updated>
+  <updated>2016-02-28T09:54:59.849Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,291 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[RecyclerView的使用]]></title>
+    <link href="http://yoursite.com/2016/02/28/RecyclerView%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2016/02/28/RecyclerView的使用/</id>
+    <published>2016-02-28T09:33:29.000Z</published>
+    <updated>2016-02-28T09:54:59.849Z</updated>
+    <content type="html"><![CDATA[<p>RecyclerView&#x7684;&#x4F7F;&#x7528;<br><a id="more"></a></p>
+<p>&#x6574;&#x4F53;&#x4E0A;&#x770B;RecyclerView&#x67B6;&#x6784;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x63D2;&#x62D4;&#x5F0F;&#x7684;&#x4F53;&#x9A8C;&#xFF0C;&#x9AD8;&#x5EA6;&#x7684;&#x89E3;&#x8026;&#xFF0C;&#x5F02;&#x5E38;&#x7684;&#x7075;&#x6D3B;&#xFF0C;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x5B83;&#x63D0;&#x4F9B;&#x7684;&#x4E0D;&#x540C;LayoutManager&#xFF0C;ItemDecoration , ItemAnimator&#x5B9E;&#x73B0;&#x4EE4;&#x4EBA;&#x77A0;&#x76EE;&#x7684;&#x6548;&#x679C;&#x3002; </p>
+<ul>
+<li>&#x4F60;&#x60F3;&#x8981;&#x63A7;&#x5236;&#x5176;&#x663E;&#x793A;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x8BF7;&#x901A;&#x8FC7;&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;LayoutManager</li>
+<li>&#x4F60;&#x60F3;&#x8981;&#x63A7;&#x5236;Item&#x95F4;&#x7684;&#x95F4;&#x9694;&#xFF08;&#x53EF;&#x7ED8;&#x5236;&#xFF09;&#xFF0C;&#x8BF7;&#x901A;&#x8FC7;ItemDecoration</li>
+<li>&#x4F60;&#x60F3;&#x8981;&#x63A7;&#x5236;Item&#x589E;&#x5220;&#x7684;&#x52A8;&#x753B;&#xFF0C;&#x8BF7;&#x901A;&#x8FC7;ItemAnimator</li>
+<li>&#x4F60;&#x60F3;&#x8981;&#x63A7;&#x5236;&#x70B9;&#x51FB;&#x3001;&#x957F;&#x6309;&#x4E8B;&#x4EF6;&#xFF0C;&#x8BF7;&#x81EA;&#x5DF1;&#x5199;</li>
+</ul>
+<p>RecyclerView&#x7684;&#x4F7F;&#x7528;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>mRecyclerView = findView(R.id.id_recyclerview);
+//&#x8BBE;&#x7F6E;&#x5E03;&#x5C40;&#x7BA1;&#x7406;&#x5668;
+mRecyclerView.setLayoutManager(layout);
+//&#x8BBE;&#x7F6E;adapter
+mRecyclerView.setAdapter(adapter)
+//&#x8BBE;&#x7F6E;Item&#x589E;&#x52A0;&#x3001;&#x79FB;&#x9664;&#x52A8;&#x753B;
+mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+//&#x6DFB;&#x52A0;&#x5206;&#x5272;&#x7EBF;
+mRecyclerView.addItemDecoration(new DividerItemDecoration(
+                getActivity(), DividerItemDecoration.HORIZONTAL_LIST));
+</code></pre><p>RecyclerView&#x53EA;&#x7BA1;&#x56DE;&#x6536;&#x4E0E;&#x590D;&#x7528;View&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x4F60;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x53BB;&#x8BBE;&#x7F6E;&#x3002;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x5176;&#x9AD8;&#x5EA6;&#x7684;&#x89E3;&#x8026;&#xFF0C;&#x7ED9;&#x4E88;&#x4F60;&#x5145;&#x5206;&#x7684;&#x5B9A;&#x5236;&#x81EA;&#x7531;&#xFF08;&#x6240;&#x4EE5;&#x4F60;&#x624D;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x7684;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x63A7;&#x4EF6;&#x5B9E;&#x73B0;ListView,GirdView&#xFF0C;&#x7011;&#x5E03;&#x6D41;&#x7B49;&#x6548;&#x679C;&#xFF09;&#x3002;  </p>
+<h3 id="activity"><a href="#Activity" class="headerlink" title="Activity"></a>Activity</h3><pre><code>import java.util.ArrayList;
+import java.util.List;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.RecyclerView.ViewHolder;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+public class HomeActivity extends ActionBarActivity
+{
+
+    private RecyclerView mRecyclerView;
+    private List&lt;String&gt; mDatas;
+    private HomeAdapter mAdapter;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_single_recyclerview);
+
+        initData();
+        mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setAdapter(mAdapter = new HomeAdapter());
+
+    }
+
+    protected void initData()
+    {
+        mDatas = new ArrayList&lt;String&gt;();
+        for (int i = &apos;A&apos;; i &lt; &apos;z&apos;; i++)
+        {
+            mDatas.add(&quot;&quot; + (char) i);
+        }
+    }
+
+    class HomeAdapter extends RecyclerView.Adapter&lt;HomeAdapter.MyViewHolder&gt;
+    {
+
+        @Override
+        public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
+        {
+            MyViewHolder holder = new MyViewHolder(LayoutInflater.from(
+                    HomeActivity.this).inflate(R.layout.item_home, parent,
+                    false));
+            return holder;
+        }
+
+        @Override
+        public void onBindViewHolder(MyViewHolder holder, int position)
+        {
+            holder.tv.setText(mDatas.get(position));
+        }
+
+        @Override
+        public int getItemCount()
+        {
+            return mDatas.size();
+        }
+
+        class MyViewHolder extends ViewHolder
+        {
+
+            TextView tv;
+
+            public MyViewHolder(View view)
+            {
+                super(view);
+                tv = (TextView) view.findViewById(R.id.id_num);
+            }
+        }
+    }
+
+}  
+</code></pre><h3 id="activity&#x7684;&#x5E03;&#x5C40;&#x6587;&#x4EF6;"><a href="#Activity_u7684_u5E03_u5C40_u6587_u4EF6" class="headerlink" title="Activity&#x7684;&#x5E03;&#x5C40;&#x6587;&#x4EF6;"></a>Activity&#x7684;&#x5E03;&#x5C40;&#x6587;&#x4EF6;</h3><pre><code>&lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    xmlns:tools=&quot;http://schemas.android.com/tools&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot; &gt;
+
+    &lt;android.support.v7.widget.RecyclerView
+        android:id=&quot;@+id/id_recyclerview&quot;
+         android:divider=&quot;#ffff0000&quot;
+           android:dividerHeight=&quot;10dp&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;match_parent&quot; /&gt;
+
+&lt;/RelativeLayout&gt;
+</code></pre><h3 id="item&#x7684;&#x5E03;&#x5C40;&#x6587;&#x4EF6;"><a href="#Item_u7684_u5E03_u5C40_u6587_u4EF6" class="headerlink" title="Item&#x7684;&#x5E03;&#x5C40;&#x6587;&#x4EF6;"></a>Item&#x7684;&#x5E03;&#x5C40;&#x6587;&#x4EF6;</h3><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;FrameLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:background=&quot;#44ff0000&quot;
+    android:layout_height=&quot;wrap_content&quot; &gt;
+
+    &lt;TextView
+        android:id=&quot;@+id/id_num&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;50dp&quot;
+        android:gravity=&quot;center&quot;
+        android:text=&quot;1&quot; /&gt;
+&lt;/FrameLayout&gt;
+</code></pre><h3 id="itemdecoration"><a href="#ItemDecoration" class="headerlink" title="ItemDecoration"></a>ItemDecoration</h3><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BE5;&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;&#x5206;&#x5272;&#x7EBF;&#xFF1A;<br>mRecyclerView.addItemDecoration()<br>&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x4E3A;RecyclerView.ItemDecoration&#xFF0C;&#x8BE5;&#x7C7B;&#x4E3A;&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x5B98;&#x65B9;&#x76EE;&#x524D;&#x5E76;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x9ED8;&#x8BA4;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;</p>
+<p>&#x8BE5;&#x7C7B;&#x7684;&#x6E90;&#x7801;&#xFF1A;</p>
+<pre><code>public static abstract class ItemDecoration {
+
+public void onDraw(Canvas c, RecyclerView parent, State state) {
+            onDraw(c, parent);
+ }
+
+
+public void onDrawOver(Canvas c, RecyclerView parent, State state) {
+            onDrawOver(c, parent);
+ }
+
+public void getItemOffsets(Rect outRect, View view, RecyclerView parent, State state) {
+            getItemOffsets(outRect, ((LayoutParams) view.getLayoutParams()).getViewLayoutPosition(),
+                    parent);
+}
+
+@Deprecated
+public void getItemOffsets(Rect outRect, int itemPosition, RecyclerView parent) {
+            outRect.set(0, 0, 0, 0);
+ }
+</code></pre><p>&#x5F53;&#x6211;&#x4EEC;&#x8C03;&#x7528;mRecyclerView.addItemDecoration()&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;decoration&#x7684;&#x65F6;&#x5019;&#xFF0C;RecyclerView&#x5728;&#x7ED8;&#x5236;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53BB;&#x4F1A;&#x7ED8;&#x5236;decorator&#xFF0C;&#x5373;&#x8C03;&#x7528;&#x8BE5;&#x7C7B;&#x7684;onDraw&#x548C;onDrawOver&#x65B9;&#x6CD5;&#xFF0C;  </p>
+<ol>
+<li>onDraw&#x65B9;&#x6CD5;&#x5148;&#x4E8E;drawChildren</li>
+<li>onDrawOver&#x5728;drawChildren&#x4E4B;&#x540E;&#xFF0C;&#x4E00;&#x822C;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x590D;&#x5199;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5373;&#x53EF;&#x3002;</li>
+<li>getItemOffsets &#x53EF;&#x4EE5;&#x901A;&#x8FC7;outRect.set()&#x4E3A;&#x6BCF;&#x4E2A;Item&#x8BBE;&#x7F6E;&#x4E00;&#x5B9A;&#x7684;&#x504F;&#x79FB;&#x91CF;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x7ED8;&#x5236;Decorator&#x3002;</li>
+</ol>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x770B;&#x4E00;&#x4E2A;RecyclerView.ItemDecoration&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#xFF0C;&#x8BE5;&#x7C7B;&#x5F88;&#x597D;&#x7684;&#x5B9E;&#x73B0;&#x4E86;RecyclerView&#x6DFB;&#x52A0;&#x5206;&#x5272;&#x7EBF;&#xFF08;&#x5F53;&#x4F7F;&#x7528;LayoutManager&#x4E3A;LinearLayoutManager&#x65F6;&#xFF09;&#x3002;<br>&#x8BE5;&#x7C7B;&#x53C2;&#x8003;&#x81EA;&#xFF1A;DividerItemDecoration</p>
+<pre><code>/*
+ * Copyright (C) 2014 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * limitations under the License.
+ */
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.RecyclerView.State;
+import android.util.Log;
+import android.view.View;
+
+
+/**
+ * This class is from the v7 samples of the Android SDK. It&apos;s not by me!
+ * &lt;p/&gt;
+ * See the license above for details.
+ */
+public class DividerItemDecoration extends RecyclerView.ItemDecoration {
+
+    private static final int[] ATTRS = new int[]{
+            android.R.attr.listDivider
+    };
+
+    public static final int HORIZONTAL_LIST = LinearLayoutManager.HORIZONTAL;
+
+    public static final int VERTICAL_LIST = LinearLayoutManager.VERTICAL;
+
+    private Drawable mDivider;
+
+    private int mOrientation;
+
+    public DividerItemDecoration(Context context, int orientation) {
+        final TypedArray a = context.obtainStyledAttributes(ATTRS);
+        mDivider = a.getDrawable(0);
+        a.recycle();
+        setOrientation(orientation);
+    }
+
+    public void setOrientation(int orientation) {
+        if (orientation != HORIZONTAL_LIST &amp;&amp; orientation != VERTICAL_LIST) {
+            throw new IllegalArgumentException(&quot;invalid orientation&quot;);
+        }
+        mOrientation = orientation;
+    }
+
+    @Override
+    public void onDraw(Canvas c, RecyclerView parent) {
+        Log.v(&quot;recyclerview - itemdecoration&quot;, &quot;onDraw()&quot;);
+
+        if (mOrientation == VERTICAL_LIST) {
+            drawVertical(c, parent);
+        } else {
+            drawHorizontal(c, parent);
+        }
+
+    }
+
+
+    public void drawVertical(Canvas c, RecyclerView parent) {
+        final int left = parent.getPaddingLeft();
+        final int right = parent.getWidth() - parent.getPaddingRight();
+
+        final int childCount = parent.getChildCount();
+        for (int i = 0; i &lt; childCount; i++) {
+            final View child = parent.getChildAt(i);
+            android.support.v7.widget.RecyclerView v = new android.support.v7.widget.RecyclerView(parent.getContext());
+            final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child
+                    .getLayoutParams();
+            final int top = child.getBottom() + params.bottomMargin;
+            final int bottom = top + mDivider.getIntrinsicHeight();
+            mDivider.setBounds(left, top, right, bottom);
+            mDivider.draw(c);
+        }
+    }
+
+    public void drawHorizontal(Canvas c, RecyclerView parent) {
+        final int top = parent.getPaddingTop();
+        final int bottom = parent.getHeight() - parent.getPaddingBottom();
+
+        final int childCount = parent.getChildCount();
+        for (int i = 0; i &lt; childCount; i++) {
+            final View child = parent.getChildAt(i);
+            final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child
+                    .getLayoutParams();
+            final int left = child.getRight() + params.rightMargin;
+            final int right = left + mDivider.getIntrinsicHeight();
+            mDivider.setBounds(left, top, right, bottom);
+            mDivider.draw(c);
+        }
+    }
+
+    @Override
+    public void getItemOffsets(Rect outRect, int itemPosition, RecyclerView parent) {
+        if (mOrientation == VERTICAL_LIST) {
+            outRect.set(0, 0, 0, mDivider.getIntrinsicHeight());
+        } else {
+            outRect.set(0, 0, mDivider.getIntrinsicWidth(), 0);
+        }
+    }
+}
+</code></pre><p>&#x8BE5;&#x5B9E;&#x73B0;&#x7C7B;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x901A;&#x8FC7;&#x8BFB;&#x53D6;&#x7CFB;&#x7EDF;&#x4E3B;&#x9898;&#x4E2D;&#x7684; android.R.attr.listDivider&#x4F5C;&#x4E3A;Item&#x95F4;&#x7684;&#x5206;&#x5272;&#x7EBF;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x6A2A;&#x5411;&#x548C;&#x7EB5;&#x5411;&#x3002;  </p>
+<p>&#x83B7;&#x53D6;&#x5230;listDivider&#x4EE5;&#x540E;&#xFF0C;&#x8BE5;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x662F;&#x4E2A;Drawable&#xFF0C;&#x5728;getItemOffsets&#x4E2D;&#xFF0C;outRect&#x53BB;&#x8BBE;&#x7F6E;&#x4E86;&#x7ED8;&#x5236;&#x7684;&#x8303;&#x56F4;&#x3002;onDraw&#x4E2D;&#x5B9E;&#x73B0;&#x4E86;&#x771F;&#x6B63;&#x7684;&#x7ED8;&#x5236;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5728;&#x539F;&#x6765;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x53E5;&#xFF1A;</p>
+<pre><code>mRecyclerView.addItemDecoration(new DividerItemDecoration(this,
+DividerItemDecoration.VERTICAL_LIST));
+</code></pre><p>&#x5982;&#x679C;&#x8BA9;&#x4F60;&#x53BB;&#x5B9E;&#x73B0;&#x4E2A;&#x7011;&#x5E03;&#x6D41;&#xFF0C;&#x6700;&#x8D77;&#x7801;&#x4E0D;&#x662F;&#x90A3;&#x4E48;&#x968F;&#x610F;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x7684;&#x5427;&#xFF1F;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;RecyclerView&#xFF0C;&#x5206;&#x5206;&#x949F;&#x7684;&#x4E8B;&#x3002;<br>&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#xFF1F;&#x5176;&#x5B9E;&#x4F60;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x7528;&#x505A;&#xFF0C;&#x53EA;&#x8981;&#x4F7F;&#x7528;StaggeredGridLayoutManager&#x6211;&#x4EEC;&#x5C31;&#x5DF2;&#x7ECF;&#x5B9E;&#x73B0;&#x4E86;&#xFF0C;&#x53EA;&#x662F;&#x4E0A;&#x9762;&#x7684;item&#x5E03;&#x5C40;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x56FA;&#x5B9A;&#x7684;&#x9AD8;&#x5EA6;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x4EC5;&#x4EC5;&#x5728;&#x9002;&#x914D;&#x5668;&#x7684;onBindViewHolder&#x65B9;&#x6CD5;&#x4E2D;&#x4E3A;&#x6211;&#x4EEC;&#x7684;item&#x8BBE;&#x7F6E;&#x4E2A;&#x968F;&#x673A;&#x7684;&#x9AD8;&#x5EA6;  </p>
+<p><a href="http://blog.csdn.net/lmj623565791/article/details/45059587" target="_blank" rel="external">http://blog.csdn.net/lmj623565791/article/details/45059587</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>RecyclerView的使用<br>]]>
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[CardView的使用]]></title>

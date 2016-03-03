@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/03/03/java%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2016-03-03T07:51:41.050Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/03/03/Activity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
     <lastmod>2016-03-03T03:04:49.983Z</lastmod>
   </url>

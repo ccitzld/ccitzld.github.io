@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/03/03/Activity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
+    <lastmod>2016-03-03T03:04:49.983Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/03/01/Android%E4%B8%ADSocket%E9%80%9A%E4%BF%A1%E4%B9%8BTCP%E5%92%8CUDP/</loc>
+    <lastmod>2016-03-01T10:03:34.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/02/28/RecyclerView%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2016-02-28T09:54:59.849Z</lastmod>
   </url>

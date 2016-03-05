@@ -47,8 +47,6 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="ZLD's Blog" type="application/atom+xml" />
-
 
 
 
@@ -63,9 +61,9 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android中Socket通信之TCP和UDP">
 <meta property="og:url" content="http://yoursite.com/2016/03/01/Android中Socket通信之TCP和UDP/index.html">
-<meta property="og:site_name" content="ZLD's Blog">
+<meta property="og:site_name" content="追求卓越">
 <meta property="og:description" content="Android中Socket通信之TCP和UDP">
-<meta property="og:updated_time" content="2016-03-01T10:03:34.000Z">
+<meta property="og:updated_time" content="2016-03-05T02:20:03.828Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android中Socket通信之TCP和UDP">
 <meta name="twitter:description" content="Android中Socket通信之TCP和UDP">
@@ -86,7 +84,7 @@
   };
 </script>
 
-  <title> Android中Socket通信之TCP和UDP | ZLD's Blog </title>
+  <title> Android中Socket通信之TCP和UDP | 追求卓越 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -125,7 +123,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">ZLD's Blog</span>
+      <span class="site-title">追求卓越</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -321,6 +319,37 @@
       
         <p>Android&#x4E2D;Socket&#x901A;&#x4FE1;&#x4E4B;TCP&#x548C;UDP<br><a id="more"></a></p>
 <h2 id="&#x4E00;socket&#x901A;&#x4FE1;&#x7B80;&#x4ECB;"><a href="#u4E00_u3001Socket_u901A_u4FE1_u7B80_u4ECB" class="headerlink" title="&#x4E00;&#x3001;Socket&#x901A;&#x4FE1;&#x7B80;&#x4ECB;"></a>&#x4E00;&#x3001;Socket&#x901A;&#x4FE1;&#x7B80;&#x4ECB;</h2><p>Android&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x7684;&#x901A;&#x4FE1;&#x65B9;&#x5F0F;&#x4E3B;&#x8981;&#x6709;&#x4E24;&#x79CD;&#xFF0C;&#x4E00;&#x662F;Http&#x901A;&#x4FE1;&#xFF0C;&#x4E00;&#x662F;Socket&#x901A;&#x4FE1;&#x3002;<br>&#x4E24;&#x8005;&#x7684;&#x6700;&#x5927;&#x5DEE;&#x5F02;&#x5728;&#x4E8E;&#xFF0C;http&#x8FDE;&#x63A5;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x201C;&#x8BF7;&#x6C42;&#x2014;&#x54CD;&#x5E94;&#x65B9;&#x5F0F;&#x201D;&#xFF0C;&#x5373;&#x5728;&#x8BF7;&#x6C42;&#x65F6;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x901A;&#x9053;&#xFF0C;&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x540E;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x624D;&#x80FD;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x3002;<br>&#x800C;Socket&#x901A;&#x4FE1;&#x4E2D;&#x57FA;&#x4E8E;TCP/IP&#x534F;&#x8BAE;&#x7684;&#x901A;&#x4FE1;&#x5219;&#x662F;&#x5728;&#x53CC;&#x65B9;&#x5EFA;&#x7ACB;&#x8D77;&#x8FDE;&#x63A5;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x7684;&#x4F20;&#x8F93;&#xFF0C;&#x5728;&#x8FDE;&#x63A5;&#x65F6;&#x53EF;&#x5B9E;&#x73B0;&#x4FE1;&#x606F;&#x7684;&#x4E3B;&#x52A8;&#x63A8;&#x9001;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x6BCF;&#x6B21;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x60F3;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x3002;<br>&#x800C;UDP&#x5219;&#x662F;&#x63D0;&#x4F9B;&#x65E0;&#x8FDE;&#x63A5;&#x7684;&#x6570;&#x636E;&#x62A5;&#x670D;&#x52A1;&#xFF0C;UDP&#x5728;&#x53D1;&#x9001;&#x6570;&#x636E;&#x62A5;&#x524D;&#x4E0D;&#x9700;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#xFF0C;&#x4E0D;&#x5BF9;&#x6570;&#x636E;&#x62A5;&#x8FDB;&#x884C;&#x68C0;&#x67E5;&#x5373;&#x53EF;&#x53D1;&#x9001;&#x6570;&#x636E;&#x5305;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">TCP</th>
+<th style="text-align:center">UDP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x662F;&#x5426;&#x8FDE;&#x63A5;</td>
+<td style="text-align:center">&#x9762;&#x5411;&#x8FDE;&#x63A5;</td>
+<td style="text-align:center">&#x975E;&#x8FDE;&#x63A5;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x4F20;&#x8F93;&#x53EF;&#x9760;&#x6027;</td>
+<td style="text-align:center">&#x53EF;&#x9760;&#x7684;</td>
+<td style="text-align:center">&#x4E0D;&#x53EF;&#x9760;&#x7684;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5E94;&#x7528;&#x573A;&#x5408;</td>
+<td style="text-align:center">&#x4F20;&#x8F93;&#x5927;&#x91CF;&#x6570;&#x636E;</td>
+<td style="text-align:center">&#x5C11;&#x91CF;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x901F;&#x5EA6;</td>
+<td style="text-align:center">&#x6162;</td>
+<td style="text-align:center">&#x5FEB;</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -425,10 +454,10 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/head.jpg"
-               alt="ccitzld" />
-          <p class="site-author-name" itemprop="name">ccitzld</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+               src="/images/head.png"
+               alt="zld" />
+          <p class="site-author-name" itemprop="name">zld</p>
+          <p class="site-description motion-element" itemprop="description">在技术上不断成长</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -451,13 +480,6 @@
 
         </nav>
 
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
         
 
         <div class="links-of-author motion-element">
@@ -509,7 +531,7 @@
   <span class="with-love">
     <i class="icon-next-heart fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">ccitzld</span>
+  <span class="author" itemprop="copyrightHolder">zld</span>
 </div>
 
 <div class="powered-by">

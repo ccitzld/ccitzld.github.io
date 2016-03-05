@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-03T07:51:41.050Z</updated>
+  <updated>2016-03-05T11:27:25.799Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Fresco图片加载库的简单使用]]></title>
+    <link href="http://yoursite.com/2016/03/05/Fresco%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2016/03/05/Fresco图片加载库的使用/</id>
+    <published>2016-03-05T10:46:52.000Z</published>
+    <updated>2016-03-05T11:27:25.799Z</updated>
+    <content type="html"><![CDATA[<p>Fresco&#x662F;FaceBook&#x63A8;&#x51FA;&#x7684;&#x4E00;&#x4E2A;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x5E93;&#x3002;<br><a id="more"></a></p>
+<h4 id="fresco&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x5E93;&#x4E0D;&#x540C;&#x4E8E;imageloader&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x63A7;&#x4EF6;&#x7EA7;&#x7684;&#x56FE;&#x7247;&#x52A0;&#x8F7D;"><a href="#Fresco_u56FE_u7247_u52A0_u8F7D_u5E93_u4E0D_u540C_u4E8EImageLoader_uFF0C_u5B83_u63D0_u4F9B_u4E86_u63A7_u4EF6_u7EA7_u7684_u56FE_u7247_u52A0_u8F7D_u3002" class="headerlink" title="Fresco&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x5E93;&#x4E0D;&#x540C;&#x4E8E;ImageLoader&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x63A7;&#x4EF6;&#x7EA7;&#x7684;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x3002;"></a>Fresco&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x5E93;&#x4E0D;&#x540C;&#x4E8E;ImageLoader&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x63A7;&#x4EF6;&#x7EA7;&#x7684;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x3002;</h4><p>&#x5982;&#x679C;&#x4F60;&#x4EC5;&#x4EC5;&#x662F;&#x60F3;&#x7B80;&#x5355;&#x4E0B;&#x8F7D;&#x4E00;&#x5F20;&#x7F51;&#x7EDC;&#x56FE;&#x7247;&#xFF0C;&#x5728;&#x73B0;&#x5728;&#x5B8C;&#x6210;&#x4E4B;&#x524D;&#xFF0C;&#x663E;&#x793A;&#x4E00;&#x5F20;&#x5360;&#x4F4D;&#x56FE;&#xFF0C;&#x90A3;&#x4E48;&#x7B80;&#x5355;&#x5730;&#x4F7F;&#x7528;SimpleDraweeView&#x5373;&#x53EF;&#x3002;</p>
+<h5 id="1-&#x5982;&#x679C;&#x5728;android-studio&#x4E2D;&#x4F7F;&#x7528;&#x52A0;&#x5165;compile-comfacebookfrescofresco090&#x5373;&#x53EF;&#x5F15;&#x5165;"><a href="#1-__u5982_u679C_u5728Android_studio_u4E2D_u4F7F_u7528_uFF0C_u52A0_u5165compile__u2018com-facebook-fresco_3Afresco_3A0-9-0+_u2019_u5373_u53EF_u5F15_u5165_u3002" class="headerlink" title="1. &#x5982;&#x679C;&#x5728;Android studio&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x52A0;&#x5165;compile &#x2018;com.facebook.fresco:fresco:0.9.0+&#x2019;&#x5373;&#x53EF;&#x5F15;&#x5165;&#x3002;"></a>1. &#x5982;&#x679C;&#x5728;Android studio&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x52A0;&#x5165;compile &#x2018;com.facebook.fresco:fresco:0.9.0+&#x2019;&#x5373;&#x53EF;&#x5F15;&#x5165;&#x3002;</h5><h5 id="2-&#x9996;&#x5148;&#x4F60;&#x9700;&#x8981;&#x52A0;&#x5165;&#x7F51;&#x7EDC;&#x6743;&#x9650;"><a href="#2-__u9996_u5148_u4F60_u9700_u8981_u52A0_u5165_u7F51_u7EDC_u6743_u9650_uFF0C" class="headerlink" title="2. &#x9996;&#x5148;&#x4F60;&#x9700;&#x8981;&#x52A0;&#x5165;&#x7F51;&#x7EDC;&#x6743;&#x9650;&#xFF0C;"></a>2. &#x9996;&#x5148;&#x4F60;&#x9700;&#x8981;&#x52A0;&#x5165;&#x7F51;&#x7EDC;&#x6743;&#x9650;&#xFF0C;</h5><h5 id="3-&#x7136;&#x540E;&#x5728;application&#x521D;&#x59CB;&#x5316;&#x65F6;&#x5728;&#x5E94;&#x7528;&#x8C03;&#x7528;setcontentview&#x4E4B;&#x524D;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;"><a href="#3-__u7136_u540E_u5728Application_u521D_u59CB_u5316_u65F6_uFF0C_u5728_u5E94_u7528_u8C03_u7528setContentView_28_29_u4E4B_u524D_uFF0C_u8FDB_u884C_u521D_u59CB_u5316_uFF1A" class="headerlink" title="3. &#x7136;&#x540E;&#x5728;Application&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;&#x5728;&#x5E94;&#x7528;&#x8C03;&#x7528;setContentView()&#x4E4B;&#x524D;&#xFF0C;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF1A;"></a>3. &#x7136;&#x540E;&#x5728;Application&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;&#x5728;&#x5E94;&#x7528;&#x8C03;&#x7528;setContentView()&#x4E4B;&#x524D;&#xFF0C;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF1A;</h5><pre><code>   //Application&#x4E2D;&#xFF1A;
+Fresco.initialize(context); 
+</code></pre><h5 id="4-&#x7136;&#x540E;&#x5728;xml&#x5E03;&#x5C40;&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x5165;&#x63A7;&#x4EF6;&#x7684;&#x540D;&#x79F0;"><a href="#4-__u7136_u540E_u5728xml_u5E03_u5C40_u6587_u4EF6_u4E2D_uFF0C_u52A0_u5165_u63A7_u4EF6_u7684_u540D_u79F0_uFF1A" class="headerlink" title="4. &#x7136;&#x540E;&#x5728;xml&#x5E03;&#x5C40;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x52A0;&#x5165;&#x63A7;&#x4EF6;&#x7684;&#x540D;&#x79F0;&#xFF1A;"></a>4. &#x7136;&#x540E;&#x5728;xml&#x5E03;&#x5C40;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x52A0;&#x5165;&#x63A7;&#x4EF6;&#x7684;&#x540D;&#x79F0;&#xFF1A;</h5><pre><code>&lt;com.facebook.drawee.view.SimpleDraweeView
+    android:id=&quot;@+id/my_image_view&quot;
+    android:layout_width=&quot;20dp&quot;
+    android:layout_height=&quot;20dp&quot;
+    fresco:placeholderImage=&quot;@drawable/my_drawable&quot;
+/&gt;
+</code></pre><h5 id="5-&#x5F00;&#x59CB;&#x52A0;&#x8F7D;&#x56FE;&#x7247;"><a href="#5-__u5F00_u59CB_u52A0_u8F7D_u56FE_u7247_uFF1A" class="headerlink" title="5. &#x5F00;&#x59CB;&#x52A0;&#x8F7D;&#x56FE;&#x7247;&#xFF1A;"></a>5. &#x5F00;&#x59CB;&#x52A0;&#x8F7D;&#x56FE;&#x7247;&#xFF1A;</h5><pre><code>Uri uri = Uri.parse(&quot;https://raw.githubusercontent.com/facebook/fresco/gh-pages/static/fresco-logo.png&quot;);
+SimpleDraweeView draweeView = (SimpleDraweeView) findViewById(R.id.my_image_view);
+draweeView.setImageURI(uri);
+</code></pre><p>&#x5269;&#x4E0B;&#x7684;&#xFF0C;Fresco&#x4F1A;&#x66FF;&#x4F60;&#x5B8C;&#x6210;</p>
+<ul>
+<li>&#x663E;&#x793A;&#x5360;&#x4F4D;&#x56FE;&#x76F4;&#x5230;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;</li>
+<li>&#x4E0B;&#x8F7D;&#x56FE;&#x7247;</li>
+<li>&#x7F13;&#x5B58;&#x56FE;&#x7247;</li>
+<li>&#x56FE;&#x7247;&#x4E0D;&#x518D;&#x663E;&#x793A;&#x65F6;&#xFF0C;&#x4ECE;&#x56FE;&#x7247;&#x4E2D;&#x79FB;&#x9664;</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Fresco是FaceBook推出的一个图片加载库。<br>]]>
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[java知识]]></title>
